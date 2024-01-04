@@ -16,6 +16,11 @@ export class UsersService {
     return this.userRepo.find();
   }
 
+  readUserById(id: number): Promise<User> {
+    return this.userRepo.findOne(id);
+  }
+  
+
 
   updateUser(id: number, newUser: User): Promise<UpdateResult> {
     return this.userRepo.update(id, newUser);

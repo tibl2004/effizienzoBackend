@@ -5,11 +5,16 @@ import { UsersService } from './users.service';
 
 @Controller('users')
 export class UsersController {
-  constructor(private readonly usersService: UsersService) {}
+  constructor(private readonly usersService: UsersService) { }
 
   @Get()
   async findAll(): Promise<User[]> {
     return this.usersService.readUsers();
+  }
+
+  @Get(':id')
+  async findOne(@Param('id') id: number): Promise<User> {
+    return this.usersService.readUserById(id);
   }
 
 
