@@ -13,11 +13,14 @@ export class User {
   nachname: string;
 
   @Column()
-  username: number;
+  username: string;
 
   @Column()
   password: string;
 
   @Column()
   loggedIn: boolean;
+
+  @Column()
+  isAdmin: boolean;
 }

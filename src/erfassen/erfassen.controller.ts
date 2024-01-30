@@ -12,12 +12,6 @@ export class ErfassenController {
     return this.erfassenService.readErfassen();
   }
 
-  @Get(':id')
-  async findOne(@Param('id') id: number): Promise<Erfassen> {
-    return this.erfassenService.readErfassenById(id);
-  }
-
-
 
   @Post()
   async create(@Body() erfassen: Erfassen): Promise<Erfassen> {

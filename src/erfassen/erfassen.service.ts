@@ -16,9 +16,6 @@ export class ErfassenService {
     return this.erfassenRepo.find();
   }
 
-  readErfassenById(id: number): Promise<Erfassen> {
-    return this.erfassenRepo.findOne(id);
-  }
   
 
 

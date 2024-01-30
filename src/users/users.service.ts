@@ -16,9 +16,7 @@ export class UsersService {
     return this.userRepo.find();
   }
 
-  readUserById(id: number): Promise<User> {
-    return this.userRepo.findOne(id);
-  }
+  
   
 
 

@@ -12,10 +12,7 @@ export class BriefeController {
     return this.briefeService.readBriefe();
   }
 
-  @Get(':id')
-  async findOne(@Param('id') id: number): Promise<Brief> {
-    return this.briefeService.readBriefById(id);
-  }
+  
 
 
 

@@ -16,9 +16,6 @@ export class BriefeService {
     return this.briefRepo.find();
   }
 
-  readBriefById(id: number): Promise<Brief> {
-    return this.briefRepo.findOne(id);
-  }
   
 
 

@@ -16,9 +16,7 @@ export class PaketeService {
     return this.paketRepo.find();
   }
 
-  readPaketById(id: number): Promise<Paket> {
-    return this.paketRepo.findOne(id);
-  }
+  
   
 
 

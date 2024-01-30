@@ -12,10 +12,7 @@ export class PaketeController {
     return this.paketeService.readPakete();
   }
 
-  @Get(':id')
-  async findOne(@Param('id') id: number): Promise<Paket> {
-    return this.paketeService.readPaketById(id);
-  }
+  
 
 
 

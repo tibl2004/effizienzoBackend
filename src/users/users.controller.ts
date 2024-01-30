@@ -12,11 +12,7 @@ export class UsersController {
     return this.usersService.readUsers();
   }
 
-  @Get(':id')
-  async findOne(@Param('id') id: number): Promise<User> {
-    return this.usersService.readUserById(id);
-  }
-
+  
 
 
   @Post()

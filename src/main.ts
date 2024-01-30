@@ -13,7 +13,9 @@ async function bootstrap() {
 
   app.use(cors(corsOptions));
 
-  await app.listen(4000); // Ändere den Port auf 3001
+  await app.listen(4000); // Behalte den Port bei 4000
+
+  console.log('App is running on port 4000');
 }
 
 bootstrap();
