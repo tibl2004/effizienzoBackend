@@ -8,6 +8,7 @@ import { BegruessungModule } from './begruessung/begruessung.module';
 import { UpdateModule } from './updates/update.module';
 import { FeedbackModule } from './feedbacks/feedback.module';
 import { DokumentModule } from './dokumente/dokument.module';
+import { TeamMemberModule } from './teamMembers/teammember.module';
 
 @Module({
   imports: [
@@ -19,6 +20,7 @@ import { DokumentModule } from './dokumente/dokument.module';
     UpdateModule,
     DokumentModule,
     FeedbackModule,
+    TeamMemberModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
       host: 'localhost',
