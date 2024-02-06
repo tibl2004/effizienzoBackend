@@ -4,10 +4,10 @@ import { UserModule } from './users/user.module';
 import { ErfassenModule } from './erfassen/erfassen.module';
 import { BriefModule } from './briefe/brief.module';
 import { PaketModule } from './pakete/paket.module';
-import { LogModule } from './logs/log.module';
 import { BegruessungModule } from './begruessung/begruessung.module';
 import { UpdateModule } from './updates/update.module';
 import { FeedbackModule } from './feedbacks/feedback.module';
+import { DokumentModule } from './dokumente/dokument.module';
 
 @Module({
   imports: [
@@ -16,8 +16,8 @@ import { FeedbackModule } from './feedbacks/feedback.module';
     BriefModule,
     PaketModule,
     BegruessungModule,
-    LogModule,
     UpdateModule,
+    DokumentModule,
     FeedbackModule,
     TypeOrmModule.forRoot({
       type: 'mysql',
