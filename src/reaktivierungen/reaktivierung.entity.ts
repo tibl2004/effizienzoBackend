@@ -8,6 +8,4 @@ export class Reaktivierung {
   @Column()
   text: string;
 
-  @Column({ type: 'date' })
-  datum: Date;
 }
